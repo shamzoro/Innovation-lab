@@ -1,0 +1,25 @@
+class Vehicle{
+	void start() {
+		System.out.println("fav vehicle");
+	}
+}
+class Car extends Vehicle{
+	void start() {
+		System.out.println("Lambo");
+	}
+}
+class Bike extends Vehicle{
+	void start() {
+	System.out.print("Enfield");
+}
+}
+public class Anime{
+	public static void main(String[] args) {
+		Vehicle ob=new Vehicle();
+		Vehicle obj=new Car();
+		Vehicle obj1=new Bike();
+		ob.start();
+		obj.start();
+		obj1.start();
+	}
+}
