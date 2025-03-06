@@ -1,0 +1,28 @@
+package pro;
+interface Playable{
+	void play();
+}
+class Guitar implements Playable{
+
+	@Override
+	public void play() {		
+		System.out.println("guitar");
+	}
+	
+}
+class Piano implements Playable{
+
+	@Override
+	public void play() {
+		System.out.println("piano");
+	}
+
+}
+public class Example {
+public static void main(String[] args) {
+	Guitar obj=new Guitar();
+	Piano obj1=new Piano();
+	obj.play();
+	obj1.play();
+}
+}
