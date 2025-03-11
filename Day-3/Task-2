@@ -1,1 +1,25 @@
-
+ class Book{
+	private String title;
+	private String author;
+	public Book() {
+		this.title="traveler";
+		this.author="zoro";
+	}
+	public Book(String title,String author) {
+		this.title=title;
+		this.author=author;
+	}
+	public void display() {
+		System.out.println("Title:"+title);
+		System.out.println("author:"+author);
+	}	
+ }
+public class Anime{
+	public static void main(String[] args) {
+		Book obj=new Book();
+		Book obj1=new Book("cook","sanji");
+		obj.display();
+		obj1.display();
+	}
+}
+ 
