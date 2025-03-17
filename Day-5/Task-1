@@ -1,0 +1,32 @@
+class Anime{
+	private String nam="sanji";
+	class Onepiece{
+		void display(){
+			System.out.println("Best wriiten character:"+nam);
+		}
+	}
+		void InnerClassExample(){
+			class Char{
+				void display(){
+					System.out.println("One piece is real");	
+				}
+			}
+			Char obj=new Char();
+			obj.display();
+		}
+}
+public class InnerClassDemo{
+	public static void main(String[] args) {
+		Anime s=new Anime();
+		Anime.Onepiece obj1=s.new Onepiece();
+		obj1.display();
+		s.InnerClassExample();
+		Runnable task=new Runnable(){
+			public void run() {
+				System.out.println("Zoro");
+			}
+		};
+		Thread thread =new Thread(task);
+		thread.start();
+	}
+}
